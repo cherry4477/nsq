@@ -1,4 +1,4 @@
-image: daocloud.io/yepeng/my-nsq
+mage: daocloud/ci-golang:1.2
 services:
 env:
    - GOPATH = "/gopath"
