@@ -4,7 +4,7 @@ env:
    - GOPATH = "/gopath"
 install:
    - mkdir -p /gopath/app/src/github.com/bitly/nsq
-    - cd  /gopath/app/src/github.com/bitly/nsq
+   - cd  /gopath/app/src/github.com/bitly/nsq
    - curl -s https://raw.githubusercontent.com/pote/gpm/v1.3.2/bin/gpm | bash
 
 script:
