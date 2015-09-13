@@ -3,13 +3,14 @@ services:
 env:
    - GOPATH = "/gopath"
 install:
-   - mkdir -p /gopath/app/src/github.com/bitly/
-   - cd  /gopath/app/src/github.com/bitly/
+   - mkdir -p /gopath/src/github.com/bitly/
+   - cd  /gopath/src/github.com/bitly/
    - git clone  https://github.com/yepengxj/nsq.git && cd nsq
    - curl -s https://raw.githubusercontent.com/pote/gpm/v1.3.2/bin/gpm | bash 
    - make && make install
 
 script:
+   - export GOPATH=/gopath
    - make
    - make install
    - sh ./test.sh 
