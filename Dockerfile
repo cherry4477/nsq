@@ -1,4 +1,4 @@
-FROM google/golang
+FROM golang
 MAINTAINER Sakeven "sakeven.jiang@daocloud.io"
 
 # Build app
