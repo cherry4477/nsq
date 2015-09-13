@@ -7,7 +7,7 @@ ENV GOPATH /gopath/app
 ADD . /gopath/app/src/github.com/bitly/nsq
 
 run cd /gopath/app/src/github.com/bitly/nsq && \ 
-    wget -qO- https://raw.githubusercontent.com/pote/gpm/v1.3.2/bin/gpm | bash && \
+    curl -s https://raw.githubusercontent.com/pote/gpm/v1.3.2/bin/gpm | bash && \
     make && \
     make install && \
     chmod +x nsq_role.sh && \
